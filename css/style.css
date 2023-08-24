@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background: rgb(0, 0, 0);
+}
+
+/* Untuk Semua */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    color: black;
+    padding-top: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 70px;
+    border-bottom: rgb(195, 195, 195) 7px solid;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+
+header li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header #logos {
+    float: left;
+}
+
+header #logos h1 {
+    margin: 0;
+}
+
+header #logos h1{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highl, header .fly a {
+    color: #0033DD;
+    font-weight: bolder;
+}
+
+header li a::after {
+    content: '';
+    position: relative;
+    display: block;
+    height: 3px;
+    width: 0%;
+    background: #0033DD;
+    transition: all .3s ease-in-out;
+}
+
+header li a:hover::after {
+    width: 103%;
+}
+
+
+/* Content */
+/* ADS SECTION */
+#ads-section {
+    min-height: 800px;
+    background-image: url(../images/windows.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+#ads-section h1{
+    margin-top: 250px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+#ads-section p {
+    font-size: 25px;
+    letter-spacing: 5px;
+    line-height: 45px;
+}
+
+.learn-more {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.learn-button {
+    cursor: pointer;
+    text-decoration: none;
+    width: 150px;
+    height: auto;
+    padding: 13px 20px;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bold;
+    background: #0033DD;
+    border: #0033DD solid 2px;
+}
+
+.learn-button:hover {
+    text-decoration: none;
+    border: #ffffff solid 2px;
+    outline: 0;
+    transition: border-color .50s ease-in-out;
+} 
+
+
+/* ABOUT SECTION */
+#about-section {
+    /* Dicek Kembali */
+    /* min-height: 800px; */
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/blueearth1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+#about-section h1{
+    margin-top: 130px;
+    margin-bottom: 10px;
+    font-size: 43px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+#about-section p {
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+
+/* footer */
+footer {
+    background: white;
+    min-height: 70px;
+    padding-top: 15px;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    border-top: #0033DD 10px solid;
+}
+
+.footer-top {
+    height: 230px;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.footer-top h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+
+.footer-top p {
+    max-width: 500px;
+    margin: 15px auto;
+    line-height: 33px;
+    font-size: 15px;
+}
+
+.socials {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.ig img {
+    background: rgb(0, 0, 0);
+    width: 45px;
+    height: 45px;
+    padding: 5px; 
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 2px rgb(195, 195, 195);
+} 
+
+.ig img:hover {
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    background: #0033DD;
+    transition: all .3s ease-in-out;
+}
+
+.dc img {
+    background: rgb(0, 0, 0);
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 2px rgb(195, 195, 195);
+} 
+
+.dc img:hover {
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    background: #0033DD;
+    transition: all .3s ease-in-out;
+}
+
+.socials li {
+    margin: 0px 30px;
+}
+
+/* Footer Paling Bottom */
+.footer-bottom {
+    color: white;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+
+.footer-bottom p {
+    font-size: 13px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+}
+
+#myname {
+    text-transform: capitalize;
+    font-weight: bolder;
+} 
+
+
+/* Responsive */
+@media(max-width: 1200px) {
+    header #logos, header nav, header nav li {
+        float: none;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    #ads-section {
+        background-position: center;
+    }
+
+}
+
+@media(max-width: 800px) {
+    header #logos, header nav, header nav li {
+        float: none;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    #ads-section {
+        background-position: center;
+    }
+
+    #ads-section h1 {
+        font-size: 35px;
+    }
+
+    #ads-section p {
+        font-size: 22px;
+    }
+
+    #about-section {
+        min-height: 750px;
+    }
+} 
+
+
+@media(max-width: 555px) {
+    header #logos, header nav, header nav li {
+        float: none;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    #ads-section {
+        background-position: center;
+    }
+
+    #ads-section h1 {
+        font-size: 20px;
+    }
+
+    #ads-section p {
+        font-size: 16px;
+    }
+
+    #about-section {
+        min-height: 990px;
+    }
+}
+
+/* FOR ME */
+@media(max-width: 376px) {
+    header #logos, header nav, header nav li {
+        float: none;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    #ads-section {
+        background-position: center;
+    }
+
+    #ads-section h1 {
+        font-size: 20px;
+    }
+
+    #ads-section p {
+        font-size: 16px;
+    }
+
+    #about-section {
+        min-height: 1300px;
+    }
+
+    #about-section h1{
+        font-size: 29px;
+    }
+
+    #about-section p{
+        font-size: 16px;
+    }
+}
