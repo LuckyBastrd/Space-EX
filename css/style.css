@@ -260,6 +260,7 @@ footer {
 
 /* Footer Paling Bottom */
 .footer-bottom {
+    background: #0033DD;
     color: white;
     height: 40px;
     align-items: center;
